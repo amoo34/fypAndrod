@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateRes_FA">
+
+
+    <RelativeLayout
+        android:id="@+id/rateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rates"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/rateRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceText">
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Rate for 1 child"
+                android:textSize="16sp"></EditText>
+
+            <TextView
+                android:id="@+id/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/rate"
+                android:text="Rupees"
+                android:textColor="#292929"
+                android:textSize="16sp"></TextView>
+
+
+            <Button
+                android:id="@+id/rateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"
+                android:text="Update Rates"
+                android:textSize="16sp"></Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/resLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rateLayout"
+            android:layout_marginTop="70dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/resText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restrictions"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/resRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resText">
+
+                <EditText
+                    android:id="@+id/res"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write Restrictions here"
+                    android:textSize="16sp"></EditText>
+
+
+                <Button
+                    android:id="@+id/resButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/res"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimary"
+                    android:text="Update Restrictions"
+                    android:textSize="16sp"></Button>
+
+
+
+            </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resLayout"
+        android:layout_marginTop="90dp"
+        >
+
+        <TextView
+            android:id="@+id/promoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promotion Discounts and Offers will be updated from Promotions In More"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+

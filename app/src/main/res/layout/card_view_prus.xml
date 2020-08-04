@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_view"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="5dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/childTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child:"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/childNameCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zain-ul_abdeen"
+            android:layout_toRightOf="@+id/childTxt"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"/>
+
+        <TextView
+            android:id="@+id/childAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_toRightOf="@+id/childNameCardView"
+            android:paddingTop="5dp"
+            android:paddingRight="2dp"/>
+
+        <TextView
+            android:id="@+id/ageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="years"
+            android:layout_toRightOf="@+id/childAge"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"/>
+
+
+        <TextView
+            android:id="@+id/childGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_toRightOf="@+id/ageTxt"
+            android:paddingTop="5dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL2">
+
+
+        <TextView
+            android:id="@+id/bookingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking:"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bookingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/10/2020"
+            android:layout_toRightOf="@+id/bookingTxt"
+            android:paddingTop="5dp"
+            android:paddingRight="40dp"/>
+
+        <TextView
+            android:id="@+id/startTimeBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:layout_toRightOf="@+id/bookingDate"
+            android:paddingTop="5dp"
+            android:paddingRight="2dp"/>
+
+        <TextView
+            android:id="@+id/toTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-TO-"
+            android:paddingTop="5dp"
+            android:paddingRight="2dp"
+            android:layout_toRightOf="@+id/startTimeBooking"/>
+
+
+        <TextView
+            android:id="@+id/endTimeBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:00"
+            android:layout_toRightOf="@+id/toTxt"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/centerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tod"
+            android:layout_toRightOf="@+id/endTimeBooking"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark2"
+            android:paddingLeft="15dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RL4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL3">
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Center:"
+            android:padding="5dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/mailcenterPRUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/contact"
+            android:text="abc"
+            android:textColor="#3F51B5"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/RL5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL4"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/dltRqst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:background="@drawable/btndesign1"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

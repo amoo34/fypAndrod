@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_profile"/>
+
+        <item
+            android:id="@+id/homeLocation"
+            android:title="Home Location"
+            android:icon="@drawable/ic_location"/>
+
+        <item
+            android:id="@+id/workLocation"
+            android:title="Work Location"
+            android:icon="@drawable/ic_location"/>
+
+        <item
+            android:id="@+id/yourRqsts"
+            android:title="Pending Requests"
+            android:icon="@drawable/ic_booking"/>
+
+
+        <item
+            android:id="@+id/bookings"
+            android:title="Previous Bookings"
+            android:icon="@drawable/ic_booking"
+            />
+        <item
+            android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/ic_about"/>
+
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/contact"
+                android:title="Contact"
+                android:icon="@drawable/ic_contact" />
+
+
+
+
+            <item
+                android:id="@+id/payment"
+                android:title="Setting"
+                android:icon="@drawable/ic_setting"/>
+
+
+
+
+
+
+
+
+
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"/>
+
+
+
+            />
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

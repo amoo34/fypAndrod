@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timings_FA">
+
+
+    <TextView
+        android:id="@+id/openingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opening Time"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/openingClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/openingText"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_green_light"
+        android:text="Hour:Minute"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/closingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closing Time"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        ></TextView>
+
+
+    <EditText
+        android:id="@+id/closingClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/closingText"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Hour:Minute"
+        ></EditText>
+
+
+
+    <Button
+        android:id="@+id/updateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closingClock"
+        android:background="@color/colorPrimary"
+        android:text="Update Timing"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#FFFFFF"></Button>
+
+
+    <TextView
+        android:id="@+id/textWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTE:\nThis is NOT One day Timing. This is overall Schedule"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:layout_below="@+id/updateTime"
+
+        ></TextView>
+
+
+</RelativeLayout>

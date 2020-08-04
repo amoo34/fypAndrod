@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayCareProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBack">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLayerBack">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/first_layer_dccp">
+
+                <ImageView
+                    android:layout_marginTop="50px"
+                    android:layout_marginBottom="50px"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:src="@drawable/profilepicdcc"/>
+
+                <TextView
+                    android:id="@+id/dPname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dPcity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="50px"
+                    android:text="LHR,Pakistan"
+                    android:textColor="@color/colorSubtitle"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="50px"
+                android:paddingTop="70px"
+                android:paddingBottom="70px"
+                android:gravity="center"
+                android:background="@drawable/second_layer_dccp">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/ratingProfileDC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTitleWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Star"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorSubtitleWhite"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:background="@color/colorPrimaryDark2"
+                    ></View>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A+"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTitleWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorSubtitleWhite"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50px"
+            android:layout_marginLeft="120px">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Email"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/dPemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal"></TextView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:background="@color/colorHorizontalDivider">
+
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Phone"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/dPnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal"></TextView>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:background="@color/colorHorizontalDivider">
+
+            </View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Address"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/dPaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleWhite"
+                    android:textSize="18sp"
+                    android:textStyle="normal"></TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="10px"
+                android:background="@color/colorHorizontalDivider">
+
+            </View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="100px">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Edit "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/second_layer_dccp"
+                android:textColor="@color/white"
+                ></Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

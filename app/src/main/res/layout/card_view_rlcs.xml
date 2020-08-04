@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_view"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="5dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/childTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child:"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/childNameCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zain-ul_abdeen"
+            android:layout_toRightOf="@+id/childTxt"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"/>
+
+
+        <TextView
+            android:id="@+id/bookingIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Date:"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/childNameCardView"/>
+
+        <TextView
+            android:id="@+id/bookingIDcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="765778"
+            android:layout_toRightOf="@+id/bookingIdText"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"/>
+
+        <TextView
+            android:id="@+id/rateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/bookingIDcardView"/>
+
+        <TextView
+            android:id="@+id/ratingCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_toRightOf="@+id/rateText"
+            android:paddingTop="5dp"
+            android:paddingRight="0dp"/>
+
+        <TextView
+            android:id="@+id/ratingText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/5"
+            android:layout_toRightOf="@+id/ratingCardView"
+            android:paddingTop="5dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RL2">
+
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review:"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+
+        <TextView
+            android:id="@+id/reviewcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am satisfied"
+            android:layout_toRightOf="@+id/reviewText"
+            android:paddingTop="5dp"
+            android:paddingRight="0dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

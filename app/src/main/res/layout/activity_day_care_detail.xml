@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dayCareDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#78CF7A">
+
+
+        <HorizontalScrollView
+            android:id="@+id/hor"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <LinearLayout
+                android:id="@+id/galleryDaycare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+        </HorizontalScrollView>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/nav_viewL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hor">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:background="#DDD3C6"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+
+                app:itemIconTint="@color/colorBlack"
+                app:itemIconSize="30sp"
+                app:itemTextColor="@drawable/nav_icon_color"
+                app:menu="@menu/dc_detail_nav" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nameCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_viewL"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/identity"
+            android:drawablePadding="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="MotherLee"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/phoneCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameCheckDc"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/ic_contact"
+            android:drawablePadding="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="04235161027"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/emailCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneCheckDc"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:text="motherLee123@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/rsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailCheckDc"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/money"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/krona_one"
+
+            android:text="RS."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/priceCheckDc"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailCheckDc"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/rsText"
+            android:fontFamily="@font/krona_one"
+            android:text="1000"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/ic_timer"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/openCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rsText"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="10:00"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" TO "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/rsText"
+            android:layout_toRightOf="@+id/openCheckDc"
+            />
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/closeCheckDc"
+            android:fontFamily="sans-serif-condensed-medium"
+
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/toText"
+            android:layout_below="@+id/rsText"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="17:10"
+            />
+
+
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/restrictions"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/resCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openCheckDc"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Only for child under 3 years"
+            />
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/locationmarker"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/distanceCheckDc"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resCheckDc"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="12"
+            />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/resCheckDc"
+            android:layout_toRightOf="@+id/distanceCheckDc"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="KM From your Location"
+            />
+
+        <TextView
+            android:layout_marginTop="2dp"
+
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/AddressCheckDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="80dp"
+            android:layout_below="@+id/distanceCheckDc"
+
+            android:textSize="20sp"
+            android:text="Johar Town"
+            />
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/RLDCDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bookingbtn"
+            android:layout_below="@+id/AddressCheckDc">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/BookingDateTime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttondesign3"
+                android:padding="10dp"
+                android:text="Booking Timing"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/ChildInfo"
+                android:layout_width="110dp"
+
+
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/BookingDateTime"
+                android:background="@drawable/buttondesign3"
+                android:padding="10dp"
+                android:text=" Add Child Data"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RLDCDB"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttondesign2"
+            android:fontFamily="sans-serif-medium"
+            android:padding="20dp"
+            android:text="Book Now"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

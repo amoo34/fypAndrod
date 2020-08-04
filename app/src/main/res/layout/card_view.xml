@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:elevation="2dp"
+    android:background="@drawable/bookingbtn"
+    android:layout_margin="10dp"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/picRL"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/RVpic"/>
+
+
+        <TextView
+            android:id="@+id/statusOfline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/RVname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mother Lee"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/picRL"
+        />
+
+
+    <TextView
+        android:id="@+id/statusTimeFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Now"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_marginLeft="14dp"
+        android:background="@color/red"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/RVname"
+        />
+
+    <TextView
+        android:id="@+id/statusTimeTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Now"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_marginLeft="14dp"
+        android:background="#04470E"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/RVname"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5A0068"
+        android:layout_below="@+id/picRL"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <TextView
+            android:id="@+id/RVpriceT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS. "
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/RVprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:layout_toRightOf="@+id/RVpriceT"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkDetails"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="#0000"/>
+
+
+</RelativeLayout>

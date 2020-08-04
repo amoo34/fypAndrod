@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UserType">
+
+
+    <ImageView
+        android:id="@+id/foodheader"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frontpagechanges" />
+
+    <ImageView
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poster1" />
+
+
+    <Button
+        android:id="@+id/userLogin"
+        android:layout_width="145dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btnsigh1"
+        android:text="Clinet"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodheader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/busineesLogin"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btnsigh2"
+        android:text="Center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/userLogin"
+        app:layout_constraintTop_toBottomOf="@+id/foodheader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:text="We give you free and secure booking,No more need to find daycares.
+                                               We have done it for you"
+        android:textColor="#E93232"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodheader"
+        app:layout_constraintVertical_bias="0.109" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

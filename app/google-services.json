@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "991287061243",
+    "firebase_url": "https://daycaresample-6c28d.firebaseio.com",
+    "project_id": "daycaresample-6c28d",
+    "storage_bucket": "daycaresample-6c28d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991287061243:android:5e4cf8fc71d62aa8559e5e",
+        "android_client_info": {
+          "package_name": "com.example.careem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991287061243-cl3m6f6adtki3tkpip0m47smsgvhquac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.careem",
+            "certificate_hash": "c13fc9bcfd17c74b5a9402c3157498b8abc51b14"
+          }
+        },
+        {
+          "client_id": "991287061243-5nhdh1070fc4uljhjrrtk7pn1erv4i0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.careem",
+            "certificate_hash": "128c3bdc4e9a8cb00144156081426fb93151e6be"
+          }
+        },
+        {
+          "client_id": "991287061243-sadt1fo8vpa4oga2ng3vcmecbflj3rtp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Xu3MlkjlEgFXlRfxsVEFNdhG8wjDUoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991287061243-sadt1fo8vpa4oga2ng3vcmecbflj3rtp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

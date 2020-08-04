@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kidsJoy.availability_FA"
+    android:background="@drawable/background_adjust_availability">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CalendarView
+            android:id="@+id/calendarViewAAFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtavail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendarViewAAFA"
+            android:text="Set Your Center's availability"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/txtavail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtavail"
+            android:layout_marginTop="10dp"
+            android:text="This availability depends upon either you allow the users to send booking request or not"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txtavail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Center is currently"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtavail2"/>
+
+        <TextView
+            android:id="@+id/statusTxtAAFA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtavail2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/txtavail3"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/enableAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtavail3"
+            android:background="@drawable/search_view"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="Enable"/>
+
+
+        <Button
+            android:id="@+id/disableAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtavail3"
+            android:background="@drawable/search_view"
+            android:layout_centerInParent="true"
+            android:textColor="@color/red"
+            android:layout_marginTop="30dp"
+            android:text="Disable"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

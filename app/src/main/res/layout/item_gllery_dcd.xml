@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="495dp"
+    android:orientation="vertical"
+    app:layout_editor_absoluteX="8dp"
+    app:layout_editor_absoluteY="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/gallryItem"
+        android:layout_width="410dp"
+        android:layout_height="170dp"
+
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+</LinearLayout>
